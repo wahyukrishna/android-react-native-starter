@@ -6,15 +6,15 @@
  * @flow strict-local
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Platform, StyleSheet , Text, View, StatusBar } from 'react-native';
 
 import Header from "./Header";
-class App extends Component {
+class App extends React.Component {
   render(){
   return (
     <View>
-      <StatusBar backgroundColor="#000000"/>
+      <StatusBar backgroundColor="blue"/>
       <Header />
       <Text>Testing App</Text>
     </View>
