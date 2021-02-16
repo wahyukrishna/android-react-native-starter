@@ -6,31 +6,20 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import React, { Component } from 'react';
+import { Platform, StyleSheet , Text, View, StatusBar } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+import Header from "./Header";
+class App extends Component {
+  render(){
   return (
     <View>
       <StatusBar backgroundColor="#000000"/>
+      <Header />
       <Text>Testing App</Text>
     </View>
   );
+  }
 };
 
 export default App;
