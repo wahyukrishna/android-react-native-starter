@@ -28,7 +28,7 @@ const App: () => React$Node = () => {
   return (
     <View>
       <StatusBar backgroundColor="#000000"/>
-      <Text>First App</Text>
+      <Text>Testing App</Text>
     </View>
   );
 };
